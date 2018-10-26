@@ -1,0 +1,9 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('sdk-release.aar'))
+
+buildscript{
+    dependencies{
+        classpath 'com.google.gms:google-services:4.0.1'
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
